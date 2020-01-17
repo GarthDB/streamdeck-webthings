@@ -1,0 +1,32 @@
+{
+  "name": "streamdeck-webthings",
+  "version": "1.0.0",
+  "description": "A Stream Deck plugin to control WebThings Framework devices.",
+  "main": "src/index.html",
+  "scripts": {
+    "build": "parcel build src/index.html -d build/output",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarthDB/streamdeck-webthings.git"
+  },
+  "keywords": [
+    "streamdeck"
+  ],
+  "author": "Garth Braithwaite <garthdb@gmail.com> (http://garthdb.com)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/GarthDB/streamdeck-webthings/issues"
+  },
+  "homepage": "https://github.com/GarthDB/streamdeck-webthings#readme",
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^3.1.1",
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.24.5",
+    "typescript": "^3.7.5",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

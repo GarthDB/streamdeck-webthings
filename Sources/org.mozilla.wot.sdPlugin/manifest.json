@@ -1,0 +1,42 @@
+{
+  "Actions": [{
+      "Icon": "plugin/images/actions/power",
+      "Name": "On / Off",
+      "States": [{
+          "Image": "plugin/images/icons/on",
+          "Name": "On"
+        },
+        {
+          "Image": "plugin/images/icons/off",
+          "Name": "Off"
+        }
+      ],
+      "Tooltip": "Turn lights on or off.",
+      "UUID": "org.mozilla.wot.properties.on"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "Garth Braithwaite",
+  "CodePath": "plugin/index.html",
+  "Description": "Control your Mozilla WebThings.",
+  "Name": "WebThings",
+  "Icon": "plugin/images/icons/plugin",
+  "Category": "WebThings",
+  "CategoryIcon": "plugin/images/actions/category",
+  "PropertyInspectorPath": "pi/index.html",
+  "URL": "https://iot.mozilla.org/framework/",
+  "Version": "1.0.0",
+  "DefaultWindowSize": [500, 650],
+  "OS": [{
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software": {
+    "MinimumVersion": "4.2"
+  }
+}
