@@ -2,9 +2,9 @@
   "name": "streamdeck-webthings",
   "version": "1.0.0",
   "description": "A Stream Deck plugin to control WebThings Framework devices.",
-  "main": "src/index.html",
+  "main": "src/pi.html",
   "scripts": {
-    "build": "parcel build src/index.html -d build/output",
+    "build": "parcel build src/pi/index.html -d Sources/org.mozilla.wot.sdPlugin/pi/ --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

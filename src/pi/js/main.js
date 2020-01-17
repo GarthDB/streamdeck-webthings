@@ -5,7 +5,7 @@ var websocket = null;
 var globalSettings = {};
 
 // Setup the websocket and handle communication
-function connectElgatoStreamDeckSocket(inPort, inPluginUUID, inRegisterEvent, inInfo) {
+window.connectElgatoStreamDeckSocket = function connectElgatoStreamDeckSocket(inPort, inPluginUUID, inRegisterEvent, inInfo) {
   // Create array of currently used actions
   var actions = {};
 

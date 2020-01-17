@@ -1,5 +1,5 @@
 <template lang="pug">
-  .container Hello {{bundler}}
+  .container HEY {{bundler}}
 </template>
 
 <script lang="ts">
@@ -16,6 +16,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .container {
-  color: green;
+  color: orange;
 }
 </style>
