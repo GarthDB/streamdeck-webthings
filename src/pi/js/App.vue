@@ -1,21 +1,21 @@
-<template lang="pug">
-  .container HEY {{bundler}}
+<template>
+  <DeviceSelector/>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
+<script>
+import Vue from 'vue'
+import {mapState} from 'vuex'
+import DeviceSelector from './DeviceSelector.vue'
 
-export default Vue.extend({
-  data() {
-    return {
-      bundler: "Parcel"
-    };
+export default {
+  components: {
+    DeviceSelector
   }
-});
+}
 </script>
 
 <style lang="scss" scoped>
 .container {
-  color: orange;
+    color: orange;
 }
 </style>

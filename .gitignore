@@ -6,6 +6,8 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 Sources/org.mozilla.wot.sdPlugin/pi
+Sources/org.mozilla.wot.sdPlugin/plugin
+Sources/org.mozilla.wot.sdPlugin/setup
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json

@@ -1,13 +1,13 @@
 {
   "Actions": [{
-      "Icon": "plugin/images/actions/power",
+      "Icon": "images/actions/power",
       "Name": "On / Off",
       "States": [{
-          "Image": "plugin/images/icons/on",
+          "Image": "images/icons/on",
           "Name": "On"
         },
         {
-          "Image": "plugin/images/icons/off",
+          "Image": "images/icons/off",
           "Name": "Off"
         }
       ],
@@ -20,9 +20,9 @@
   "CodePath": "plugin/index.html",
   "Description": "Control your Mozilla WebThings.",
   "Name": "WebThings",
-  "Icon": "plugin/images/icons/plugin",
+  "Icon": "images/icons/plugin",
   "Category": "WebThings",
-  "CategoryIcon": "plugin/images/actions/category",
+  "CategoryIcon": "images/actions/category",
   "PropertyInspectorPath": "pi/index.html",
   "URL": "https://iot.mozilla.org/framework/",
   "Version": "1.0.0",

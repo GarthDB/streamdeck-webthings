@@ -4,7 +4,10 @@
   "description": "A Stream Deck plugin to control WebThings Framework devices.",
   "main": "src/pi.html",
   "scripts": {
-    "build": "parcel build src/pi/index.html -d Sources/org.mozilla.wot.sdPlugin/pi/ --public-url ./",
+    "build": "npm run build:pi && npm run build:setup && npm run build:plugin",
+    "build:setup": "parcel build src/setup/index.html -d Sources/org.mozilla.wot.sdPlugin/setup/ --public-url ./",
+    "build:pi": "parcel build src/pi/index.html -d Sources/org.mozilla.wot.sdPlugin/pi/ --public-url ./",
+    "build:plugin": "parcel build src/plugin/index.html -d Sources/org.mozilla.wot.sdPlugin/plugin/ --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +30,7 @@
     "sass": "^1.24.5",
     "typescript": "^3.7.5",
     "vue": "^2.6.11",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuex": "^3.1.2"
   }
 }
