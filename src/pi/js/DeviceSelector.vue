@@ -43,14 +43,16 @@ export default {
     },
     changeBridge(e) {
       if (this.bridges[e.target.value] && this.bridges[e.target.value].things) {
-        this.$store.commit('loadThings', this.bridges[e.target.value].things);
+        const bridge = this.bridges[e.target.value];
+        this.$store.commit('loadThings', bridge.things);
+        this.selectBridge(bridge);
       }
     },
     changeThing(e) {
       const thing = this.things[e.target.value];
-      this.updateTitle(thing.title);
+      this.selectThing(thing);
     },
-    ...mapMutations(['clearBridges','updateTitle'])
+    ...mapMutations(['clearBridges','selectThing', 'selectBridge'])
   }
 }
 </script>

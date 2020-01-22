@@ -37,13 +37,14 @@ const store = new Vuex.Store({
     loadThings (state, things) {
       state.currentThings = things;
     },
-    updateTitle (state, title) {
-      console.log(title);
+    selectBridge (state, bridge) {
+      state.selectedBridge = bridge;
+    },
+    selectThing (state, thing) {
       const json = {
-        "action": "org.mozilla.wot.properties.on",
-        "event": "sendToPlugin",
+        "event": "setSettings",
         "context": pUUID,
-        "payload": {"type":"setTitle", title}
+        "payload": {thing, bridge: state.selectedBridge}
       }
       websocket.send(JSON.stringify(json));
     }
@@ -106,7 +107,7 @@ bc.onmessage = (ev) => {
       return res.json();
     }).then(things => {
       store.commit('addBridge', {name: ev.data.name, jwt: ev.data.jwt, baseUrl: ev.data.baseUrl, things})
-      console.log(things);
+      console.log(ev);
     });
   }
 }
